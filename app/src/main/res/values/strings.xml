@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FrontEnd</string>
+    <string name="splash_name">Telemedicine</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_text">Lorem ipsum dolor sit amet, conse
+                                ctetur adipiscing elit, t. Ut enim ad veni
+                                am, quis nostrud exercitation ullamco
+    </string>
+    <string name="welcome_text1">Lorem ipsum dolor sit amet, conse</string>
+    <string name="welcome_text2">ctetur adipiscing elit, t. Ut enim ad ven</string>
+    <string name="welcome_text3">am, quis nostrud exercitation ullamco</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="urgent">Urgent</string>
+</resources>

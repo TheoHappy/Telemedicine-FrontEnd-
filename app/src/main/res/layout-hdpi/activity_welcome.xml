@@ -1,0 +1,135 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <View
+        android:id="@+id/v_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/proximanova_semibold"
+        android:text="@string/welcome"
+        android:textColor="@color/White"
+
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_WT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31.5dp"
+        android:fontFamily="@font/proximanova_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_text1"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+
+    <TextView
+        android:id="@+id/tv_WT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.5dp"
+        android:fontFamily="@font/proximanova_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_text2"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_WT1" />
+
+    <TextView
+        android:id="@+id/tv_WT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.5dp"
+        android:fontFamily="@font/proximanova_regular"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_text3"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_WT2" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/sign_up"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/proximanova_semibold"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_WT3" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/round_button_transparent"
+        android:fontFamily="@font/proximanova_semibold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signUp" />
+
+    <TextView
+        android:id="@+id/tv_Urgent"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/proximanova_semibold"
+        android:text="@string/urgent"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:shadowColor="@color/colorPrimary"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
