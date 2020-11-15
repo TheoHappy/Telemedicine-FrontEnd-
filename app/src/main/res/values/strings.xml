@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FrontEnd</string>
+    <string name="app_name">Telemedicine</string>
     <string name="splash_name">Telemedicine</string>
     <string name="welcome">Welcome</string>
     <string name="welcome_text">Lorem ipsum dolor sit amet, conse
@@ -12,4 +12,6 @@
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="urgent">Urgent</string>
+    <string name="email_adress">Email Adress</string>
+    <string name="password">Password</string>
 </resources>
