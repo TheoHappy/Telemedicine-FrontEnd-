@@ -14,4 +14,16 @@
     <string name="urgent">Urgent</string>
     <string name="email_adress">Email Adress</string>
     <string name="password">Password</string>
+    <string name="add_photos">ADD PHOTOS</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_input_text">Your Full Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="birthday_input_text">dd/mm/yy</string>
+    <string name="email">Email</string>
+    <string name="email_input_text">Your Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_input_text">Your Phone number</string>
+    <string name="location_adress">Location/Adress</string>
+    <string name="location_adress_input_text">Your Location</string>
+    <string name="next">Next</string>
 </resources>

@@ -96,15 +96,18 @@
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
-        android:textSize="22sp"
-        android:text="Button"
+        android:textSize="20sp"
+        android:text="@string/sign_up"
+        android:fontFamily="@font/proximanova_semibold"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:textColor="@color/White"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
