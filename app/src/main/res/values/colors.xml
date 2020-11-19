@@ -6,5 +6,6 @@
     <color name="White">#ffffff</color>
     <color name="colorBorderInputText">#ced8dc</color>
     <color name="colorTextSignUp">#37474e</color>
+    <color name="colorTextSecondary">#607c8a</color>
 
 </resources>

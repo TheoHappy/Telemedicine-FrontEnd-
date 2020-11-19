@@ -1,10 +1,12 @@
-package com.example.frontend;
+package com.example.frontend.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.frontend.R;
 
 public class MainActivity extends AppCompatActivity {
     private final static int SPLASH_TIME_OUT = 3000;

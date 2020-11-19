@@ -1,4 +1,4 @@
-package com.example.frontend;
+package com.example.frontend.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,6 +6,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.frontend.R;
 
 public class SignUpActivity extends AppCompatActivity {
     private TextView toolbarTitle;

@@ -26,4 +26,20 @@
     <string name="location_adress">Location/Adress</string>
     <string name="location_adress_input_text">Your Location</string>
     <string name="next">Next</string>
+    <string name="notification">Notification</string>
+    <string name="schedule">Schedule</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="very_urgent">very urgent</string>
+    <string name="name">Name</string>
+    <string name="name_input_text">Your Name</string>
+    <string name="desease">Desease</string>
+    <string name="desease_input_text">What is your illness</string>
+    <string name="location">Location</string>
+    <string name="location_input_text">Where your location</string>
+    <string name="description">Description (Optional)</string>
+    <string name="description_input_text">Describe Here</string>
+    <string name="request">Request</string>
+    <string name="request_approved_title">Your Request Has Been Approved</string>
+
 </resources>
