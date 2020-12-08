@@ -10,7 +10,7 @@ public class Patient {
     @SerializedName("FullName")
     private String fullName;
     @SerializedName("Birthday")
-    private Date birthday;
+    private String birthday;
     @SerializedName("Email")
     private String email;
     @SerializedName("Phone")
@@ -24,7 +24,7 @@ public class Patient {
     @SerializedName("Base64Photo")
     private String base64Photo;
 
-    public Patient(String fullName, Date birthday, String email, String phone, String address, String username, String password, String base64Photo) throws ParseException {
+    public Patient(String fullName, String birthday, String email, String phone, String address, String username, String password, String base64Photo) {
         this.fullName = fullName;
         setBirthday(birthday);
         this.email = email;
@@ -43,11 +43,11 @@ public class Patient {
         this.fullName = fullName;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) throws ParseException {
+    public void setBirthday(String birthday)  {
         this.birthday = birthday;
     }
 

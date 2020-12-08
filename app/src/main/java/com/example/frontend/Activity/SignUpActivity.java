@@ -38,7 +38,6 @@ public class SignUpActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(null);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnNext = findViewById(R.id.btn_next);
-        System.out.println("Petuh");
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,8 +53,8 @@ public class SignUpActivity extends AppCompatActivity {
         UserRegService userRegService = ServiceBuilder.buildService(UserRegService.class);
         Call<Patient> request = userRegService.registerPatient(
                 "Dumitru",
-                new Date(2003,7,20),
-                "andreiTest16@gmail.com",
+                "10/12/2003",
+                "andreiTest22@gmail.com",
                 "079862342",
                 "Otovasca",
                 "andreiTest7",

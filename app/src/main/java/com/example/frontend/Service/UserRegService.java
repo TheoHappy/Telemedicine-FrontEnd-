@@ -18,7 +18,7 @@ public interface UserRegService {
     @POST("/api/Register/UserReg")
     Call<Patient> registerPatient(
             @Field("FullName") String fullName,
-            @Field("Birthday") Date birthday,
+            @Field("Birthday") String birthday,
             @Field("Email") String email,
             @Field("Phone") String phone,
             @Field("Address") String address,
