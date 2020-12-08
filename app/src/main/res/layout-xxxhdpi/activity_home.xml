@@ -50,7 +50,7 @@
             app:itemTextAppearanceInactive="@style/BottomNavigationView.InActiveTextSize"
             app:itemTextColor="@drawable/nav_item_state_selector"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/home_menu" />
+            app:menu="@menu/bottom_menu" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -64,12 +64,13 @@
         android:focusable="true"
         app:backgroundTint="@color/colorPrimary"
         app:fabCustomSize="50dp"
+        android:onClick="addRequest"
         app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/CoordinatorLayout1"
         app:maxImageSize="24dp"
-        app:srcCompat="@drawable/ic_add_white"
+        app:srcCompat="@drawable/ic_add"
         tools:ignore="VectorDrawableCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

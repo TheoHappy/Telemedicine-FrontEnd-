@@ -7,5 +7,9 @@
     <color name="colorBorderInputText">#ced8dc</color>
     <color name="colorTextSignUp">#37474e</color>
     <color name="colorTextSecondary">#607c8a</color>
+    <color name="recyclerViewBackground">#eff0f0</color>
+    <color name="recyclerViewBorder">#eceff1</color>
+    <color name="recyclerViewBorderTransparent">#4Deceff1</color>
+    <color name="btnGray">#8fa4ad</color>
 
 </resources>

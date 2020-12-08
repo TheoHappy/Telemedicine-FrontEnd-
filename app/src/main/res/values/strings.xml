@@ -41,5 +41,39 @@
     <string name="description_input_text">Describe Here</string>
     <string name="request">Request</string>
     <string name="request_approved_title">Your Request Has Been Approved</string>
-
+    <string name="request_details">Request Details</string>
+    <string name="name_example_text">Jojon Suehndra</string>
+    <string name="desease_example_text">Sore Eyes</string>
+    <string name="location_example_text">St. Broxlyn 212</string>
+    <string name="description_example_text">Aku ingin menjadi setitik awan kecildi langint bersama mentari yaga hah</string>
+    <string name="doctor">Doctor</string>
+    <string name="filter">Filter</string>
+    <string name="speciality">Speciality</string>
+    <string name="confirm">Confirm</string>
+    <string name="short_description">Short Description</string>
+    <string name="cancel_request">Cancel Request</string>
+    <!--    Front-End MockUp-->
+    <string-array name="names">
+        <item>Dudung Sokmati</item>
+        <item>Nunung Brandon</item>
+        <item>Udin Batakooran</item>
+    </string-array>
+    <string-array name="rating">
+        <item>4.9</item>
+        <item>4.2</item>
+        <item>3.9</item>
+    </string-array>
+    <string-array name="speciality">
+        <item>Eye Specialist</item>
+        <item>Eye Specialist</item>
+        <item>Eye Specialist</item>
+    </string-array>
+    <string-array name="location">
+        <item>St Bronxlyn 212</item>
+        <item>St Bronxlyn 212</item>
+        <item>St Bronxlyn 212</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_theo">Hello Theo</string>
 </resources>

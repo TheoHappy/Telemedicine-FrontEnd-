@@ -28,8 +28,8 @@
 
             <ImageView
                 android:id="@+id/iv_approved"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="45dp"
                 android:src="@drawable/ic_aproved"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -41,13 +41,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="70dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="46dp"
                 android:layout_marginEnd="70dp"
                 android:fontFamily="@font/proximanova_semibold"
                 android:gravity="center"
                 android:text="@string/request_approved_title"
                 android:textColor="@color/colorTextSignUp"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_approved"
@@ -58,13 +58,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="40dp"
                 android:fontFamily="@font/proximanova_regular"
                 android:gravity="center"
                 android:text="@string/welcome_text"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_request_approved_title"
@@ -75,12 +75,12 @@
                 android:id="@+id/tv_request_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/proximanova_semibold"
                 android:paddingLeft="27dp"
                 android:text="@string/request_details"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_request_approved_text"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="4dp" />
@@ -89,12 +89,12 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="39dp"
+                android:layout_marginTop="29dp"
                 android:fontFamily="@font/proximanova_semibold"
                 android:paddingLeft="27dp"
                 android:text="@string/name"
                 android:textColor="@color/colorTextSignUp"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_request_details"
                 tools:ignore="MissingConstraints" />
 
@@ -107,7 +107,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/name_example_text"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name"
                 tools:ignore="MissingConstraints" />
 
@@ -120,7 +120,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/desease"
                 android:textColor="@color/colorTextSignUp"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_value"
                 tools:ignore="MissingConstraints" />
 
@@ -133,7 +133,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/desease_example_text"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_desease"
                 tools:ignore="MissingConstraints" />
 
@@ -146,7 +146,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/location"
                 android:textColor="@color/colorTextSignUp"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_desease_value"
                 tools:ignore="MissingConstraints" />
 
@@ -159,7 +159,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/location_example_text"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_location"
                 tools:ignore="MissingConstraints" />
 
@@ -172,7 +172,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/description"
                 android:textColor="@color/colorTextSignUp"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_location_value"
                 tools:ignore="MissingConstraints" />
 
@@ -185,7 +185,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/description_example_text"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_description"
                 tools:ignore="MissingConstraints" />
 
@@ -198,7 +198,7 @@
                 android:paddingLeft="27dp"
                 android:text="@string/doctor"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@+id/tv_description_value"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="4dp" />
@@ -234,7 +234,7 @@
                         android:fontFamily="@font/proximanova_semibold"
                         android:text="@string/name"
                         android:textColor="@color/colorTextSignUp"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toEndOf="@+id/iv_avatar"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints" />
@@ -249,15 +249,15 @@
                         android:fontFamily="@font/proximanova_regular_italic"
                         android:text="@string/speciality"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toEndOf="@+id/iv_avatar"
                         app:layout_constraintTop_toBottomOf="@+id/tv_name_doctor"
                         tools:ignore="MissingConstraints" />
 
                     <ImageView
                         android:id="@+id/iv_avatar"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_marginStart="25dp"
                         android:layout_marginLeft="25dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -336,7 +336,7 @@
                         android:fontFamily="@font/proximanova_regular"
                         android:text="5"
                         android:textColor="@color/colorTextSecondary"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         app:layout_constraintStart_toEndOf="@+id/iv_star5"
                         app:layout_constraintTop_toBottomOf="@+id/tv_speciality"
                         tools:ignore="MissingConstraints" />
@@ -346,15 +346,15 @@
             <Button
                 android:id="@+id/btn_confirm"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="27dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="46dp"
                 android:layout_marginEnd="27dp"
                 android:background="@drawable/btn_change_back_green_to_gray"
                 android:fontFamily="@font/proximanova_semibold"
                 android:text="@string/confirm"
                 android:textColor="@drawable/btn_change_text_color_white_to_gray"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card" />
@@ -362,15 +362,15 @@
             <Button
                 android:id="@+id/btn_cancel_request"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="27dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="27dp"
                 android:background="@drawable/btn_change_back_green_to_gray"
                 android:fontFamily="@font/proximanova_semibold"
                 android:text="@string/cancel_request"
                 android:textColor="@drawable/btn_change_text_color_white_to_gray"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />

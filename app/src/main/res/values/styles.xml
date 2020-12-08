@@ -3,8 +3,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorBorderInputText</item>
     </style>
     <style name="Navigation" parent="Widget.Design.BottomNavigationView">
         <item name="android:paddingBottom">5dp</item>
@@ -13,9 +13,6 @@
     </style>
     <style name="WhiteMaterial" parent="Theme.MaterialComponents">
         <item name="color">@color/colorPrimary</item>
-    </style>
-    <style name="AppTheme.RegisterActionBAr">
-
     </style>
     <style name="BottomNavigationView.InActiveTextSize" parent="@style/TextAppearance.AppCompat.Caption">
         <item name="android:textSize">10sp</item>

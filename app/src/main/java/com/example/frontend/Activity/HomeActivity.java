@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.frontend.Fragment.ApprovedRequestFragment;
 import com.example.frontend.Fragment.HomeFragment;
-import com.example.frontend.Fragment.NotificationFragment;
+import com.example.frontend.Fragment.ProfileFragment;
+import com.example.frontend.Fragment.RequestFragment;
 import com.example.frontend.R;
+import com.example.frontend.Fragment.ScheduleFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
@@ -21,11 +24,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        toolbarTitle = findViewById(R.id.toolbar_title);
-//        toolbarTitle.setText("Home");
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle(null);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bnv_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
     }
@@ -47,6 +45,12 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.notification:
                     selectedFragment = new ApprovedRequestFragment();
                     break;
+                case R.id.profile:
+                    selectedFragment = new ProfileFragment();
+                    break;
+                case R.id.schedule:
+                    selectedFragment = new ScheduleFragment();
+                    break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.FL_fragment_container,selectedFragment).commit();
             return true;
@@ -54,4 +58,7 @@ public class HomeActivity extends AppCompatActivity {
     };
 
 
+    public void addRequest(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.FL_fragment_container,new RequestFragment()).commit();
+    }
 }
