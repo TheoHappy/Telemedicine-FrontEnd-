@@ -2,9 +2,6 @@ package com.example.frontend.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Patient {
     @SerializedName("FullName")
@@ -19,21 +16,11 @@ public class Patient {
     private String address;
     @SerializedName("Username")
     private String username;
-    @SerializedName("Password")
-    private String password;
     @SerializedName("Base64Photo")
     private String base64Photo;
+    @SerializedName("Status")
+    private String status;
 
-    public Patient(String fullName, String birthday, String email, String phone, String address, String username, String password, String base64Photo) {
-        this.fullName = fullName;
-        setBirthday(birthday);
-        this.email = email;
-        this.phone = phone;
-        this.address = address;
-        this.username = username;
-        this.password = password;
-        this.base64Photo = base64Photo;
-    }
 
     public String getFullName() {
         return fullName;
@@ -83,20 +70,20 @@ public class Patient {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getBase64Photo() {
         return base64Photo;
     }
 
     public void setBase64Photo(String base64Photo) {
         this.base64Photo = base64Photo;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override
@@ -108,8 +95,8 @@ public class Patient {
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
                 ", base64Photo='" + base64Photo + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

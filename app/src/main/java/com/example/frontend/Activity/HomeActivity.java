@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.frontend.Fragment.ApprovedRequestFragment;
 import com.example.frontend.Fragment.HomeFragment;
@@ -19,6 +20,8 @@ import com.example.frontend.Fragment.ScheduleFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
+    private String token;
+    private Bundle bundle = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,9 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bnv_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        token = getIntent().getStringExtra("token");
+        Toast.makeText(getApplicationContext(),token,Toast.LENGTH_SHORT).show();
+        bundle.putString("token",token);
     }
 
     @Override
@@ -52,6 +58,7 @@ public class HomeActivity extends AppCompatActivity {
                     selectedFragment = new ScheduleFragment();
                     break;
             }
+            selectedFragment.setArguments(bundle);
             getSupportFragmentManager().beginTransaction().replace(R.id.FL_fragment_container,selectedFragment).commit();
             return true;
         }
@@ -59,6 +66,11 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void addRequest(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.FL_fragment_container,new RequestFragment()).commit();
+        RequestFragment requestFragment = new RequestFragment();
+        requestFragment.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction().replace(R.id.FL_fragment_container,requestFragment).commit();
+
     }
+
+
 }

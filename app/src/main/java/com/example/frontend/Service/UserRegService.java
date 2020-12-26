@@ -11,12 +11,10 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface UserRegService {
-//    @POST("/api/Register/UserReg")
-//    Call<Patient> registerPatient(@Body Patient patient);
 
     @FormUrlEncoded
     @POST("/api/Register/UserReg")
-    Call<Patient> registerPatient(
+    Call<String> registerPatient(
             @Field("FullName") String fullName,
             @Field("Birthday") String birthday,
             @Field("Email") String email,

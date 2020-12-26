@@ -1,9 +1,18 @@
 package com.example.frontend.Service;
 
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.solver.widgets.Chain;
+
+import java.io.IOException;
+
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.provider.UserDictionary.Words.APP_ID;
 
 public class ServiceBuilder {
     private static final String URL = "http://81.180.72.17/";

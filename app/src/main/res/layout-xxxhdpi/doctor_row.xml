@@ -47,7 +47,7 @@
                 android:fontFamily="@font/proximanova_regular"
                 android:text="@string/location"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/tv_speciality"
                 tools:ignore="MissingConstraints" />

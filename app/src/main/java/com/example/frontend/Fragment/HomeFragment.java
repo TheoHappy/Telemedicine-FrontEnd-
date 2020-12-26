@@ -16,7 +16,19 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.frontend.Adaptors.AdapterDoctorList;
+import com.example.frontend.Model.Doctor;
+import com.example.frontend.Model.Patient;
 import com.example.frontend.R;
+import com.example.frontend.Service.GetDoctorListService;
+import com.example.frontend.Service.GetProfileService;
+import com.example.frontend.Service.ServiceBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class HomeFragment extends Fragment {
@@ -24,8 +36,6 @@ public class HomeFragment extends Fragment {
     private RecyclerView rvDoctorList;
     private Toolbar toolbar;
     private TextView toolbarTitle;
-    String names[], locations[], speciality[], rating[];
-    int images[] = {R.drawable.avatar};
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -36,20 +46,45 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(null);
         ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
         rvDoctorList = getView().findViewById(R.id.rv_doctor_list);
-        names = getResources().getStringArray(R.array.names);
-        locations = getResources().getStringArray(R.array.location);
-        speciality = getResources().getStringArray(R.array.speciality);
-        rating = getResources().getStringArray(R.array.rating);
+        rvDoctorList.setHasFixedSize(true);
 
-        AdapterDoctorList adapterDoctorList = new AdapterDoctorList(getContext(),names,locations,speciality,rating,images);
-        rvDoctorList.setAdapter(adapterDoctorList);
-        rvDoctorList.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        getDoctorList();
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
+
+    public void getDoctorList(){
+
+        Bundle bundle = getArguments();
+        final String token = bundle.getString("token");
+        GetDoctorListService getDoctorListService;
+        getDoctorListService = ServiceBuilder.buildService(GetDoctorListService.class);
+        Call<List<Doctor>> call = getDoctorListService.getDoctors(token);
+
+        call.enqueue(new Callback<List<Doctor>>() {
+            @Override
+            public void onResponse(Call<List<Doctor>> request, Response<List<Doctor>> response) {
+
+                List<Doctor> doctors = response.body();
+                for (Doctor doctor: doctors){
+                    doctor.setToken(token);
+                }
+                AdapterDoctorList adapterDoctorList = new AdapterDoctorList(((AppCompatActivity)getActivity()),doctors);
+                rvDoctorList.setAdapter(adapterDoctorList);
+                rvDoctorList.setLayoutManager(new LinearLayoutManager(getContext()));
+            }
+
+            @Override
+            public void onFailure(Call<List<Doctor>> request, Throwable t) {
+                System.out.println(t.getMessage());
+            }
+        });
+    }
+
 }
